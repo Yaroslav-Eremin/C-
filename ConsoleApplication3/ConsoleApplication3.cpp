@@ -1,30 +1,29 @@
-﻿
-
-
-#include <iostream>
+﻿#include<iostream>
 using namespace std;
 
 int main() {
-	for (int i = 1; i <= 100; i++)
+	srand(time(0));
+	int a, b, c = 0, d, t = 0;
+	cout << "borders:";
+	cin >> a >> b;
+	d = (rand() % b) + a;
+	while (t != d)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		c++;
+		t = 0;
+		cin >> t;
+		if (t<d)
 		{
-			cout << "FizzBuzz" << endl;
+			cout << "more"<<endl;
 		}
-		else if (i % 3 == 0)
+		if (t>d)
 		{
-			cout << "Fizz" << endl;
+			cout << "smaller"<<endl;
 		}
-		else if (i % 5 == 0)
+		if (t==d)
 		{
-			cout << "Buzz" << endl;
+			cout << "guessed right"<<c;
 		}
-		else
-		{
-			cout << i<<endl;
-		}
-
 	}
-
 	return 0;
 }
