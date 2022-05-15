@@ -1,0 +1,3 @@
+﻿  ConsoleApplication3.cpp
+C:\Users\Ярослав\Documents\Visual Studio 2022\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(5,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ConsoleApplication3.vcxproj -> C:\Users\Ярослав\Documents\Visual Studio 2022\ConsoleApplication3\x64\Debug\ConsoleApplication3.exe
